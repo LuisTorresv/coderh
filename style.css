@@ -398,3 +398,27 @@ section#NosotrosH div p{
             padding: 150px 100px 100px;
     }
 }
+
+
+/*  Animaciones  */
+
+.animate-zoom {
+  animation:animatezoom 0.6s
+}
+@keyframes animatezoom{
+  from{transform:scale(0)} 
+  to{transform:scale(1)}
+}
+
+.animate-fading{
+  animation:fading 1s
+}
+@keyframes fading{
+  0%{opacity:0}
+  25%{opacity:0.25}
+  50%{opacity:0.5}
+  75%{opacity:1}
+  
+}
+.animate-right{position:relative; }
+@keyframes animateright{from{right:-300px;opacity:0} to{right:0px;opacity:1}}
