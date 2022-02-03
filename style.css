@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* se realiza el desafio de grid, pero se ajustaron todos los html en grid y adaptado a las distintas resolciones*/
+/* de manera que en este desafio se trato de incluir el desafio opcional de grid*/
+
+/* clase grid para el index*/
+.gridIndex{
+height: 100vh;
+margin: 0;
+display: grid;
+grid-template-areas: 
+"header"
+"home"
+"nosotros"
+"adopta"
+"familias"
+"contacto"
+"footer"
+;
+/*grid-template-rows: 1fr 4fr 4fr 4fr 4fr 4fr 1fr;*/
+grid-template-rows: 1fr, repeat(5, 4fr), 1fr;
+grid-template-columns: 100%;
+}
+
+header{
+  background-color: #4FBDBA;
+  grid-area: header;
+
+  position:fixed;
+  background-color: #4FBDBA;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+header img{
+    width: 60px;
+    height: 60px;
+  
+  }
+ 
+  ul li{
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  header ul li a{
+      color: #fff;
+      font-size: 24px;
+      text-decoration: none;
+      padding: 5px 10px;   
+    }
+
+footer{
+        background-color: cyan;
+        grid-area: footer;
+        color: brown;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+      }
+
+footer ul li a img {
+        width:30px;
+        height:30px;
+        object-fit:cover;
+        object-position:50% 50%
+    }
+
+/* seccion home para el index*/
+section#home img{
+
+        width: 100%;
+        height: 100%;
+}
+
+section#home {
+    background-color:blue;
+    grid-area: home;
+    padding: 150px 100px 100px;
+    
+    margin-top: 60px;
+    padding:0;
+   
+}
+
+/* seccion nosotros para el index*/
+section#nosotros {
+    background-color: goldenrod;
+    color: #fff;
+    grid-area: nosotros;
+    
+    background-image: url("https://media.perezlara.com/2021/02/Adopcio%CC%81n-de-mascotas-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .8;
+      
+    align-items: center;
+    height: 100vh;
+    padding: 150px 100px 100px;
+   
+}
+
+section#nosotros h2{
+      color: #fff;
+      font-size: 40px;
+    }
+
+section#nosotros p{
+      color: #fff;
+      font-size: 100%;
+    }
+
+/* seccion adopta para el index*/
+section#adopta {
+    background-color: red;
+    grid-area: adopta;
+
+    /*display: flex;*/
+    text-align:center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr;
+    
+    
+}
+
+section#adopta p{
+  
+    font-size: 20px;
+  }
+
+/* clases para crear 2 columnas y 1 fila dentro la seccion adopta en el index*/
+/* se hizo de esta manera para probar que se podia hacer en vez de usar flexbox*/
+.adoptaA{
+grid-column: 1 / 2;
+grid-row: 1 / 2;
+text-align:center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
+
+.adoptaB{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align:center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
+  
+  
+  
+  
+/* seccion familia para el index*/
+/* se uso flexbox en vez de grid para organizar los items*/
+section#familias {
+    
+    grid-area: familias;
+
+    display: flex;
+    text-align:center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+    background-color: #7900FF;
+    padding: 150px 100px 100px;
+}
+
+.familias__img {
+    width: 700px;
+    height: 480px;
+  }
+  
+/* seccion contacto para el index*/
+section#contacto {
+    background-color: green;
+    grid-area: contacto;
+
+    background-image: url("https://www.boredpanda.es/blog/wp-content/uploads/2016/06/llamadas-perros-telefono-emergencias-reverend-scott-portada1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .8;
+    color: #fff;
+
+    align-items: center;
+    height: 100vh;
+    padding: 150px 100px 100px;
+}
+
+
+footer{
+    background-color: cyan;
+    grid-area: footer;
+}
+
+/* seccion requisitos para html adopciones*/
+section#requisitos{
+    font-size: 50px;
+    color: #fff;
+    background-color: #7900FF;  
+    padding: 150px 100px 100px;
+  }
+/* seccion requisitos para html adopciones*/
+section#adoptaH{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+  }
+
+  /* seccion nosotros para el html nosotros*/
+  section#NosotrosH{
+    background-image: url("https://media.perezlara.com/2021/02/Adopcio%CC%81n-de-mascotas-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .8;
+      
+    align-items: center;
+    height: 100vh;
+    padding: 150px 100px 100px;
+  }
+  section#NosotrosH div h1 , section#NosotrosH div h2{
+    color: #fff;
+    font-size: 40px;
+  }
+
+section#NosotrosH div p{
+    color: #fff;
+    font-size: 100%;
+  }
+  
+  /* se crean clases grid para el html de adopciones */
+  .adopta__pH{
+    
+    font-size: 20px;
+  }
+  
+  .gridAdopciones{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr 9fr 9fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .Adopciones1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .Adopciones2{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+  }
+  .Adopciones3{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+
+  }
+  .Adopciones4{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+
+  }
+
+   /* se crean clases grid para el html de nosotros */
+  .gridNosotros{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr 18fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .Nosotros1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .Nosotros2{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+  }
+  .Nosotros3{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+
+  }
+
+@media only screen and (max-width:1023px ) {
+    .grid{
+        height: 100vh;
+        margin: 0;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "home"
+        "nosotros"
+        "adopta"
+        "familias"
+        "contacto"
+        "footer"
+        ;
+        grid-template-rows: repeat(7, auto);
+        grid-template-columns: 100%;
+        }
+/*
+     ul{
+         display: none;
+     } 
+      se anadira menu hover */
+     section#home {
+        width: 100%;
+        height: 430px;
+    }
+   
+    section#nosotros, section#NosotrosH, section#requisitos {
+        padding: 60px 5%;
+        
+    }
+     section#nosotros div p, section#NosotrosH div p, section#requisitos {
+        font-size: 100%;
+       
+    }
+
+    section#contacto{
+      background-size: 100vw 100vh;
+    }
+    .familias__img {
+      width: 300px;
+      height: 180px; 
+    }
+     section#adopta {
+        background-color: red;
+        grid-area: adopta;
+    
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 50px;
+    
+        /* display: grid;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr;*/
+        
+        
+    }
+
+    .adoptaA{
+        /* 
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;*/
+        margin: 50px;
+        }
+        
+    .adoptaB{
+            /* grid-column: 1 / 2;
+            grid-row: 2 / 3;*/
+            margin: 50px;
+        }
+    
+    section#familias {
+    
+            grid-area: familias;
+        
+            display: flex;
+            flex-direction: column;
+            text-align:center;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 50px;
+            color: #fff;
+            background-color: #7900FF;
+            padding: 150px 100px 100px;
+    }
+}
