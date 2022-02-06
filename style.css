@@ -65,15 +65,15 @@ header img{
 
 footer{
         background-color: cyan;
-        grid-area: footer;
         color: brown;
+        grid-area: footer;
         display: flex;
-        justify-content: space-between;
-        width: 100%;
+        justify-content: space-between;/**/
+        
         
       }
 
-footer ul li a img {
+footer div ul li a img {
         width:30px;
         height:30px;
         object-fit:cover;
@@ -208,10 +208,7 @@ section#contacto {
 }
 
 
-footer{
-    background-color: cyan;
-    grid-area: footer;
-}
+
 
 /* seccion requisitos para html adopciones*/
 section#requisitos{
