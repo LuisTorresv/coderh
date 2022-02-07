@@ -32,13 +32,13 @@ grid-template-columns: 100%;
 
 header{
   background-color: #4FBDBA;
-  grid-area: header;
+  /*grid-area: header;*/
 
   position:fixed;
-  background-color: #4FBDBA;
+
   justify-content: space-between;
   align-items: center;
-  display: flex;
+ /* display: flex;*/
   margin: 0;
   padding: 0;
   z-index: 10;
@@ -81,18 +81,20 @@ footer div ul li a img {
     }
 
 /* seccion home para el index*/
-section#home img{
+.home__img{
 
         width: 100%;
         height: 100%;
 }
 
+
+
 section#home {
-    background-color:blue;
-    grid-area: home;
+    
+    /*grid-area: home;*/
     padding: 150px 100px 100px;
     
-    margin-top: 60px;
+    margin-top: 0px;
     padding:0;
    
 }
@@ -101,7 +103,7 @@ section#home {
 section#nosotros {
     background-color: goldenrod;
     color: #fff;
-    grid-area: nosotros;
+    /*grid-area: nosotros;*/
     
     background-image: url("https://media.perezlara.com/2021/02/Adopcio%CC%81n-de-mascotas-1.png");
     background-size: cover;
@@ -126,18 +128,22 @@ section#nosotros p{
 
 /* seccion adopta para el index*/
 section#adopta {
-    background-color: red;
+    /*
     grid-area: adopta;
-
-    /*display: flex;*/
+    
+    display: flex;*/
+    background-image: url("https://www.wallpapertip.com/wmimgs/156-1563227_dog-seamless-pattern-theme-bone-paw-foot-print.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .8;
     text-align:center;
     justify-content: space-between;
     align-items: center;
     font-size: 50px;
-
+/* 
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 3fr;*/
     
     
 }
@@ -219,6 +225,10 @@ section#requisitos{
   }
 /* seccion requisitos para html adopciones*/
 section#adoptaH{
+    background-image: url("https://www.wallpapertip.com/wmimgs/156-1563227_dog-seamless-pattern-theme-bone-paw-foot-print.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .8;
     display: flex;
     flex-direction: column;
     text-align:center;
