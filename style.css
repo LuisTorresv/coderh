@@ -94,7 +94,7 @@ footer div ul li a img {
 section#home {
     
     /*grid-area: home;*/
-    padding: 150px 100px 100px;
+   
     
     margin-top: 0px;
     padding:0;
@@ -113,7 +113,7 @@ section#nosotros {
     opacity: .8;
       
     align-items: center;
-    height: 100vh;
+    
     padding: 150px 100px 100px;
    
 }
@@ -142,6 +142,7 @@ section#adopta {
     justify-content: space-between;
     align-items: center;
     font-size: 50px;
+    
 /* 
     display: grid;
     grid-template-rows: 1fr;
@@ -181,17 +182,20 @@ text-align:center;
 /* seccion familia para el index*/
 /* se uso flexbox en vez de grid para organizar los items*/
 section#familias {
-    
+   /* 
     grid-area: familias;
 
     display: flex;
+    justify-content: space-between;*/
     text-align:center;
-    justify-content: space-between;
+    
     align-items: center;
     font-size: 50px;
     color: #fff;
     background-color: #7900FF;
-    padding: 150px 100px 100px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
 }
 
 .familias__img {
@@ -212,7 +216,7 @@ section#contacto {
 
     align-items: center;
     height: 100vh;
-    padding: 150px 100px 100px;
+    
 }
 
 
@@ -247,19 +251,19 @@ section#adoptaH{
     opacity: .9;
 
     align-items: center;
-    height: 100vh;
-    padding: 150px 100px 100px;
+    
+    
   }
 
 
   section#NosotrosH div h1 , section#NosotrosH div h2{
     color: #fff;
-    font-size: 40px;
+    
   }
 
 section#NosotrosH div p, section#NosotrosH div ol{
     color: #fff;
-    font-size: 100%;
+    
   }
   
   /* se crean clases grid para el html de adopciones */
@@ -410,12 +414,12 @@ margin-left: 20%;
      } 
       se anadira menu hover */
      section#home {
-        width: 100%;
+        padding-top: 120px;
         height: 430px;
     }
    
     section#nosotros, section#NosotrosH, section#requisitos {
-        padding: 60px 5%;
+        padding: 140px 5%;
         
     }
      section#nosotros div p, section#NosotrosH div p, section#requisitos {
@@ -464,7 +468,7 @@ margin-left: 20%;
             margin: 50px;
         }
     
-    section#familias {
+  section#familias {
     
             grid-area: familias;
         
@@ -476,8 +480,8 @@ margin-left: 20%;
             font-size: 50px;
             color: #fff;
             background-color: #7900FF;
-            padding: 150px 100px 100px;
-    }
+           
+ 
 }
 
 
